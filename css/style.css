@@ -10,6 +10,9 @@
   --filter-bg-color: #deebff;
   --background-card: white;
   --grey: #d9d9d9;
+  --text-color-black: #000;
+  --text-color-white: #fff;
+
 }
 
 .fa-solid {
@@ -30,7 +33,7 @@ h1 {
 }
 
 a {
-  color: #000;
+  color: var(--text-color-black);
   text-decoration: none;
 }
 
@@ -140,7 +143,7 @@ footer {
 }
 
 .nav-link a {
-  color: black;
+  color: var(--text-color-black);
   text-decoration: none;
   padding-top: 15px;
 }
@@ -194,7 +197,7 @@ footer {
 }
 
 .search-button h3 {
-  color: white;
+  color: var(--text-color-white);
   margin: 15px;
 }
 
@@ -203,8 +206,8 @@ footer {
   align-items: center;
   padding: 16px 17px;
   border-radius: 15px;
-  border: 1px solid var(--blue, #0065fc);
-  background: var(--blue, #0065fc);
+  border: 1px solid var(--main-color);
+  background: var(--main-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: none;
 }
@@ -242,7 +245,7 @@ footer {
   padding: 4px 19px 4px 19px;
   border-radius: 25px;
   align-items: center;
-  background-color: white;
+  background-color: var(--text-color-white);
   border-style: solid;
   border-color: var(--grey);
 }
@@ -474,7 +477,7 @@ footer {
   flex-direction: row;
 }
 
-.footer div {
+.footer-list {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -484,6 +487,11 @@ footer {
 .footer h4,
 p {
   margin: 0px;
+}
+
+.footer p:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
